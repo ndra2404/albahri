@@ -1,0 +1,27 @@
+{
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_7fc368c43eb735b69180140b34c6d288"
+    },
+    "font awesome 5 free": {
+        "normal": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/font_awesome_5_free_normal_72706379795a43776f539779c34f0385",
+        "900": "font_awesome_5_free_900_c69a88bb297fd22860d2e4ac6e11aed6"
+    },
+    "open sans": {
+        "300": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_300_1d6849e351b30d7d7fb264a1878f4b3a",
+        "normal": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_normal_e3f9da90edb379e243cceabb2fdb3f0a",
+        "600": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_600_2a60ebfba7bda514848a0bbbd15b621a",
+        "bold": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_bold_074d893389082c36506eb383f9ca70e7",
+        "800": "open_sans_800_ff3fba9a9fc2a96112903cfc411756fd"
+    },
+    "montserrat": {
+        "100": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_100_a33175ed70b9f7658ae81c9efa61938d",
+        "200": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_200_d36113c7a8643243e5b2a0e2685ba6ee",
+        "300": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_300_39b1972e72c43f1f0e368a33cc82c0ce",
+        "normal": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_normal_b74b751c20b429298921949795391ef1",
+        "500": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_500_a34ab50d0b60a015b62e11133b0bf05b",
+        "600": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_600_54346339d706ca965bcbed499d2795db",
+        "bold": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_bold_4b7576218464d90344a2d2769cab2f75",
+        "800": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_800_65b23b6af673d3e826e93ac9d76d4ee3",
+        "900": "montserrat_900_f211363c4d816f802e92103f12fe3e42"
+    }
+}
