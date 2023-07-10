@@ -18,7 +18,7 @@
       </div>
 @endif
 @php
-    if(Request::Segment(1)=='create'){
+    if(Request::Segment(2)=='create'){
         $url = url('user');
     }else{
         $url = url('user/'.$data->id);
