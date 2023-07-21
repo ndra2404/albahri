@@ -157,10 +157,10 @@
             </div>
         </div>
             <div class="box-footer">
-            @if($data->status==6)
+            @if($data->status==7)
                 <button type="submit" class="btn btn-info pull-left">Submit</button>
             @endif
-                <a href="{{url('data/persertaDidik')}}" class="btn btn-warning pull-right">Cancel</a>
+                <a href="{{url('data/pembayaran')}}" class="btn btn-warning pull-right">Cancel</a>
             </div>
         </form>
     </div>

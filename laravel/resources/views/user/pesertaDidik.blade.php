@@ -18,7 +18,7 @@
       </div>
 @endif
     <div class="col-md-12">
-    @if(Auth::user()->level==1 || Auth::user()->level==3)
+    @if((Auth::user()->level==1 || Auth::user()->level==3) && Request::segment(2)=="pendaftaran")
         <a href="{{url('cetakPdf')}}" target="_blank" class="btn btn-info pull-right">Cetak Pdf</a>
     @endif
         <table class="table">
@@ -69,21 +69,26 @@
                                 @if($peserta->status==5)
                                     <a target="_blank" href="{{route('invoice',$peserta->id_pendaftaran)}}" class="btn btn-primary">Kirim Invoice</a>
                                 @endif
-                                @if($peserta->status==6)
+                                @if($peserta->status==7)
                                     <a href="{{route('pembayaran',$peserta->id_pendaftaran)}}" class="btn btn-primary">Cek pembayaran</a>
                                 @endif
                                 @if($peserta->status==1)
                                     Menunggu upload Persyaratan
+                                @endif
+                                @if($peserta->status==6)
+                                    Menunggu Pembayaran
                                 @endif
                             @endif
                         @endif
                         @if(Auth::user()->level==2)
                             @if($peserta->status==1)
                                 <a href="{{route('uploadDocument',$peserta->id_pendaftaran)}}" class="btn btn-primary">Upload Document</a>
-                            @elseif($peserta->status==2||$peserta->status==6)
+                            @elseif($peserta->status==2||$peserta->status==5)
                                 Menunggu Validasi
-                            @elseif($peserta->status==5)
+                            @elseif($peserta->status==6)
                                 <a href="{{route('confirmation',$peserta->id_pendaftaran)}}" class="btn btn-primary">Konfirmasi pembayaran</a>
+                            @elseif($peserta->status==8)
+                                Pendaftaran Berhasil sekolah akan dimulai pada {{$mulai}}
                             @endif
                     @endif
                 </td>

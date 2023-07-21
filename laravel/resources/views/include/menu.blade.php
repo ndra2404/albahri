@@ -9,7 +9,7 @@
         <li class="nav-item"><a class="nav-link" href="{{url('pendaftaran')}}">Pendaftaran</a></li>
         @endguest
         @auth
-            @if(Auth::user()->level==1)
+            @if(Auth::user()->level==1 || Auth::user()->level==3)
                 <li class="nav-item"><a class="nav-link" href="classes.html">Data</a> <i class="fas fa-caret-down"></i>
                   <ul class="submenu">
                     <li><a href="{{url('data/pendaftaran')}}">Pendaftaran</a></li>

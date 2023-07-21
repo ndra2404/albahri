@@ -99,20 +99,22 @@ class PendaftaranController extends Controller
 
     }
     public function pesertaDidik(){
-        if(Auth::user()->level==1){
+        $tgl = MasterParamModel::where('param_code','MULAI')->first();
+        $mulai = date('d M Y',strtotime($tgl->param_value));
+        if(Auth::user()->level==1||Auth::user()->level==3){
             $pesertas = PendaftaranModel::all();
         }else{
             $orangtua = OrangtuaModel::where('id_users',Auth::user()->id)->firstOrFail();
             $pesertas = PendaftaranModel::where('id_orangtua',$orangtua->id_orangtua)->get();
         }
-        return view('user.pesertadidik',compact('pesertas'));
+        return view('user.pesertadidik',compact('pesertas','mulai'));
     }
     public function Jadwal(){
         $pesertas = PendaftaranModel::whereIn('status',[3,5])->get();
         return view('user.pesertadidik',compact('pesertas'));
     }
     public function pembayaran(){
-        $pesertas = PendaftaranModel::whereIn('status',[6])->get();
+        $pesertas = PendaftaranModel::whereIn('status',[7])->get();
         return view('user.pesertadidik',compact('pesertas'));
     }
 
@@ -131,7 +133,7 @@ class PendaftaranController extends Controller
         ->where('id_pendaftaran',$id)->firstOrFail();
 
         if($reg->isMethod('post')){
-            $dataUpdate = PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'7']);
+            $dataUpdate = PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'8']);
             $tgl = MasterParamModel::where('param_code','MULAI')->first();
             echo $message ="Dear Ibu/Bapak,\n\nPembayaran anda dengan nomor Pendaftaran ".$data->no_pendaftaran." telah kami terima, Pembelajaran dimulai pada ".date('d M Y',strtotime($tgl->param_value));
             return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
@@ -252,7 +254,7 @@ class PendaftaranController extends Controller
             }
                 if($success){
                     PendaftaranModel::where('id_pendaftaran',$id)->update([
-                    'status'=>'6'
+                    'status'=>'7'
                 ]);
                     return redirect('pesertadidik')
                     ->with([
