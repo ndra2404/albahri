@@ -159,7 +159,13 @@ class PendaftaranController extends Controller
         $document = DocumentModel::where('id_pendaftaran',$id)->firstOrFail();
         $interview = InterviewModel::where('id_pendaftaran',$id)->first();
 
-        return view('user.jadwalInterview',compact('data','document','interview'));
+        $notifWa = DB::table('tbl_notif')->where('code','VIEW')->first();
+        $notifWa = $notifWa->content;
+        $change = array('[nodaftar]','[tgl]','[jam]','[catatan]');
+        $new = array($data->no_pendaftaran,date('d M Y',strtotime($interview->tgl_interview)),$interview->jam_interview,$interview->note);
+
+        $notifWa = str_replace($change,$new,$notifWa);
+        return view('user.jadwalInterview',compact('data','document','interview','notifWa'));
     }
     public function invoice(REQUEST $reg,$id){
         $data = PendaftaranModel::leftJoin('tbl_orangtua as b','b.id_orangtua','=','tbl_pendaftaran.id_orangtua')
@@ -287,7 +293,7 @@ class PendaftaranController extends Controller
         if (! $latest) {
             return 'AL'.date('ymd').'00001';
         }
-        $string = preg_replace("/[^0-9\.]/", '','AL'.date('ymd').'00001');
+        $string = preg_replace("/[^0-9\.]/", '',$latest->no_transaksi);
         return 'AL' . sprintf('%04d', $string+1);
     }
 }

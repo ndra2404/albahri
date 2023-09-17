@@ -154,11 +154,7 @@
                 <button type="submit" class="btn btn-info pull-left">Submit</button>
                 <a href="{{url('data/jadwal')}}" class="btn btn-warning pull-right">Cancel</a>
                 @if($data->status==5)
-                    <a target='_blank'href="https://wa.me/{{$data->no_telp}}?text={{urlencode('Dear Ibu/Bapak
-
-pendaftaran anda dengan nomor '.$data->no_pendaftaran.' mendapatkan jadwal wawancara pada '.date('d M Y',strtotime($interview->tgl_interview)).'
-catatan:
-'.$interview->note.'')}} " class="btn btn-info pull-left">Kirim Whatapps</a>
+                    <a target='_blank'href="https://wa.me/{{$data->no_telp}}?text={{urlencode($notifWa)}} " class="btn btn-info pull-left">Kirim Whatapps</a>
                 @endif
             </div>
         </form>

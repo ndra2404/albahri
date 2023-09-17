@@ -142,7 +142,7 @@
                     <label>Status</label>
                     <select name="status" class="form-control" >
                         <option value="3">Verifikasi</option>
-                        <option value="4">Tolak</option>
+                        <option value="4">Tidak Sesuai</option>
                     </select>
                 </div>
                 </div>
@@ -150,11 +150,6 @@
             <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-left">Submit</button>
                 <a href="{{url('data/persertaDidik')}}" class="btn btn-warning pull-right">Cancel</a>
-                @if($data->status==3)
-                    <a target='_blank'href="https://wa.me/{{$data->no_telp}}?text={{urlencode('Dear Ibu/Bapak
-
-pendaftaran anda dengan nomor '.$data->no_pendaftaran.' diterima dan segera akan dibuatkan jadwal wawancara')}} " class="btn btn-info pull-left">Kirim Whatapps</a>
-                @endif
                 @if($data->status==4)
                     <a target='_blank' href="https://wa.me/{{$data->no_telp}}?text={{urlencode('Dear Ibu/Bapak
 
