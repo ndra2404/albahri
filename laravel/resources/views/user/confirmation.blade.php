@@ -141,13 +141,28 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>pendaftaran dan angsuran PPDB<span>
-    <ul>
-        <li>seragam 3 stell ( seragam muslim putih, seragam batik, seragam olahraga)</li>
-        <li>tas sekolah</li>
-        <li>alat tulis dan buku sekolah</li></ul>
-</span></td>
-                        <td>Rp. {{number_format($bayar->param_value)}}</td>
+                        <td>Pendaftaran</td>
+                        <td>Rp. {{number_format(150000)}}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Baju Seragam (muslim,batik,olahraga)</td>
+                        <td>Rp. {{number_format(195000)}}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tas</td>
+                        <td>Rp. {{number_format(30000)}}</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Alat tulis dan buku sekolah 2 semester</td>
+                        <td>Rp. {{number_format(300000)}}</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sumbangan Bangunan</td>
+                        <td>Rp. {{number_format(41000)}}</td>
                     </tr>
                     <tfooter>
                     <tr style="font-weight: bold;">

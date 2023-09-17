@@ -172,7 +172,8 @@ class PendaftaranController extends Controller
         ->where('id_pendaftaran',$id)->firstOrFail();
         PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'6']);
         $bayar = MasterParamModel::where('param_code','BAYAR')->first();
-        $message ="Dear Ibu/Bapak,\n\nPendaftaran anda dengan nomor ".$data->no_pendaftaran." harus membayar tagihan dengan nominal Rp. ".number_format($bayar->param_value);
+        $message ="Kepada Ibu/Bapak,\n\nKami dari sekolah islam terpadu memberitahukan hasil wawancara dan test pendaftaran anda dengan nomor ".$data->no_pendaftaran." dinyatakan lulus sebagai calon siswa baru dan diharapkan untuk segera melakukan pembayaran
+        administrasi sekolah dengan nominal Rp. ".number_format($bayar->param_value);
         return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
     }
     public function uploadDocument(Request $reg,$id){
