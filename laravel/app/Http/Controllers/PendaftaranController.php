@@ -162,7 +162,11 @@ class PendaftaranController extends Controller
         $notifWa = DB::table('tbl_notif')->where('code','VIEW')->first();
         $notifWa = $notifWa->content;
         $change = array('[nodaftar]','[tgl]','[jam]','[catatan]');
-        $new = array($data->no_pendaftaran,date('d M Y',strtotime($interview->tgl_interview)),$interview->jam_interview,$interview->note);
+        $new = array($data->no_pendaftaran,'','','');
+
+        if(isset($interview->tgl_interview)){
+            $new = array($data->no_pendaftaran,date('d M Y',strtotime($interview->tgl_interview)),$interview->jam_interview,$interview->note);
+        }
 
         $notifWa = str_replace($change,$new,$notifWa);
         return view('user.jadwalInterview',compact('data','document','interview','notifWa'));

@@ -134,13 +134,13 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Tanggal Interview</label>
-                        <input type="date" name="tgl_interview" required value="{{!empty($interview->tgl_interview)?$interview->tgl_interview:''}}" class="form-control" placeholder="Email">
+                        <input type="date" name="tgl_interview" required value="{{!isset($interview->tgl_interview)?$interview->tgl_interview:''}}" class="form-control" placeholder="Email">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Jam</label>
-                        <input type="text" name="jam" required value="{{!empty($interview->jam_interview)?$interview->jam_interview:''}}" class="form-control" placeholder="Jam">
+                        <input type="text" name="jam" required value="{{!isset($interview->jam_interview)?$interview->jam_interview:''}}" class="form-control" placeholder="Jam">
                     </div>
                 </div>
                 <div class="col-lg-12">
