@@ -293,7 +293,7 @@ class PendaftaranController extends Controller
         if (! $latest) {
             return 'AL'.date('ymd').'00001';
         }
-        $string = preg_replace("/[^0-9\.]/", '',$latest->no_transaksi);
+        $string = preg_replace("/[^0-9\.]/", '',$latest->no_pendaftaran);
         return 'AL' . sprintf('%04d', $string+1);
     }
 }
