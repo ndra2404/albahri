@@ -151,9 +151,7 @@
                 <button type="submit" class="btn btn-info pull-left">Submit</button>
                 <a href="{{url('data/persertaDidik')}}" class="btn btn-warning pull-right">Cancel</a>
                 @if($data->status==4)
-                    <a target='_blank' href="https://wa.me/{{$data->no_telp}}?text={{urlencode('Dear Ibu/Bapak
-
-pendaftaran anda dengan nomor '.$data->no_pendaftaran.' ditolak')}} " class="btn btn-info pull-left">Kirim Whatapps</a>
+                    <a target='_blank' href="https://wa.me/{{$data->no_telp}}?text={{urlencode('Dear Ibu/Bapak kami dari sekolah islam terpadu bahwa hasil pendaftaran dengan nomor '.$data->no_pendaftaran.' ditolak, karena tidak sesuai dengan persyaratan pendaftaran')}} " class="btn btn-info pull-left">Kirim Whatapps</a>
                 @endif
             </div>
         </form>
