@@ -120,11 +120,11 @@
             </div>
             <div class="form-group">
                 <label>Kartu Keluarga</label>
-                <a target='_blank' href="{{url($document->akte_kelahiran)}}">{{$document->kartu_keluarga}}</a>
+                <a target='_blank' href="{{url($document->kartu_keluarga)}}">{{$document->kartu_keluarga}}</a>
             </div>
             <div class="form-group">
                 <label>Ktp Wali</label>
-                <a target='_blank' href="{{url($document->akte_kelahiran)}}">{{$document->ktp_wali}}</a>
+                <a target='_blank' href="{{url($document->ktp_wali)}}">{{$document->ktp_wali}}</a>
             </div>
             <div class="form-group">
                 <label>Pas Photo</label>
@@ -134,13 +134,13 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Tanggal Interview</label>
-                        <input type="date" name="tgl_interview" value="{{!empty($interview->tgl_interview)?$interview->tgl_interview:''}}" class="form-control" placeholder="Email">
+                        <input type="date" name="tgl_interview" required value="{{!empty($interview->tgl_interview)?$interview->tgl_interview:''}}" class="form-control" placeholder="Email">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Jam</label>
-                        <input type="text" name="jam" value="{{!empty($interview->jam_interview)?$interview->jam_interview:''}}" class="form-control" placeholder="Jam">
+                        <input type="text" name="jam" required value="{{!empty($interview->jam_interview)?$interview->jam_interview:''}}" class="form-control" placeholder="Jam">
                     </div>
                 </div>
                 <div class="col-lg-12">

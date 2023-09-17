@@ -126,11 +126,11 @@
             </div>
             <div class="form-group">
                 <label>Kartu Keluarga</label>
-                <a target='_blank' href="{{url($document->akte_kelahiran)}}">{{$document->kartu_keluarga}}</a>
+                <a target='_blank' href="{{url($document->kartu_keluarga)}}">{{$document->kartu_keluarga}}</a>
             </div>
             <div class="form-group">
                 <label>Ktp Wali</label>
-                <a target='_blank' href="{{url($document->akte_kelahiran)}}">{{$document->ktp_wali}}</a>
+                <a target='_blank' href="{{url($document->ktp_wali)}}">{{$document->ktp_wali}}</a>
             </div>
             <div class="form-group">
                 <label>Pas Photo</label>
