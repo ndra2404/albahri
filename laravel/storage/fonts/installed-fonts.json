@@ -7,7 +7,6 @@
         "900": "font_awesome_5_free_900_e3bd5e228cbf2a2d48137f67c8da538f"
     },
     "open sans": {
-<<<<<<< HEAD
         "300": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/open_sans_300_0885c5810a008bcb7c54e9d1bf54fb2c",
         "normal": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/open_sans_normal_f9f1b653d87c168097eaa958ffde3cdf",
         "600": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/open_sans_600_9542d9fe5ed8edbce0c8641c6025458b",
@@ -23,23 +22,6 @@
         "600": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/montserrat_600_485729d96603ccf9729bf58de2db0851",
         "bold": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/montserrat_bold_5da7810bf4e960efe50d20e94a894069",
         "800": "C:\\xampp\\htdocs\\alBahri\\laravel\\storage\\fonts\/montserrat_800_bb4fb217ae8181e31fdcc24e6f32a5f3",
-=======
-        "300": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_300_0885c5810a008bcb7c54e9d1bf54fb2c",
-        "normal": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_normal_f9f1b653d87c168097eaa958ffde3cdf",
-        "600": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_600_9542d9fe5ed8edbce0c8641c6025458b",
-        "bold": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/open_sans_bold_9f0e3c1c8c0fab5db8d6ce31e4104d18",
-        "800": "open_sans_800_3ebe6ab4b0031eb39caac9c5f613dcef"
-    },
-    "montserrat": {
-        "100": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_100_6164641e1084aad4a517246be4e7214d",
-        "200": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_200_a265b0c8dd3071bb837672a6a3428c47",
-        "300": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_300_11be3eb1825a588a468235740322e12d",
-        "normal": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_normal_00833106404dc8458cdfb436c759f23d",
-        "500": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_500_1236ec90acb329158f494b3fcb44327e",
-        "600": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_600_485729d96603ccf9729bf58de2db0851",
-        "bold": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_bold_5da7810bf4e960efe50d20e94a894069",
-        "800": "D:\\Project\\apps\\website\\alBahri\\laravel\\storage\\fonts\/montserrat_800_bb4fb217ae8181e31fdcc24e6f32a5f3",
->>>>>>> d569e61443107d73b299e308cd409b52150a0841
         "900": "montserrat_900_f1f1d05ddbc7bae79cf2388a44df7c8f"
     }
 }

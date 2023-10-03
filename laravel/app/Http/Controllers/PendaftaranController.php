@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\PendaftaranModel;
-use App\Models\User;
-use App\Models\OrangtuaModel;
-use App\Models\DocumentModel;
-use App\Models\InterviewModel;
-use App\Models\MasterParamModel;
-use App\Models\ConfirmationModel;
+use App\Http\Models\PendaftaranModel;
+use App\Http\Models\User;
+use App\Http\Models\OrangtuaModel;
+use App\Http\Models\DocumentModel;
+use App\Http\Models\InterviewModel;
+use App\Http\Models\MasterParamModel;
+use App\Http\Models\ConfirmationModel;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
