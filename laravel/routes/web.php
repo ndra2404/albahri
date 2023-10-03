@@ -37,6 +37,7 @@ Route::get('/syarat', function () {
         Route::any('verification/{id}', [PendaftaranController::class, 'verification'])->name('verification');
         Route::any('jadwalInterview/{id}', [PendaftaranController::class, 'jadwalInterview'])->name('jadwalInterview');
         Route::any('invoice/{id}', [PendaftaranController::class, 'invoice'])->name('invoice');
+        Route::any('ditolak/{id}', [PendaftaranController::class, 'tolak'])->name('ditolak');
         Route::any('confirmation/{id}', [PendaftaranController::class, 'confirmation'])->name('confirmation');
         Route::any('pembayaran/{id}', [PendaftaranController::class, 'cekPembayaran'])->name('pembayaran');
         Route::get('cetakPdf', [PendaftaranController::class, 'cetakPdf'])->name('cetakPdf');
