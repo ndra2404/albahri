@@ -33,7 +33,7 @@
                 <input type="password" required name="password" class="form-control" placeholder="Confirm Password">
               </div>
             </div>
-            <h3>Orang tua / Wali</h3>
+            <h3>Orang Tua / Wali</h3>
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
@@ -47,7 +47,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="tempat_lahir_ayah" value="{{old('tempat_lahir_ayah')}}"  class="form-control" placeholder="Tempat lahir ayah">
+                  <input type="text" name="tempat_lahir_ayah" value="{{old('tempat_lahir_ayah')}}"  class="form-control" placeholder="Tempat Lahir Ayah">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -67,7 +67,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="tempat_lahir_ibu" value="{{old('tempat_lahir_ibu')}}"  class="form-control" placeholder="Tempat lahir Ibu">
+                  <input type="text" name="tempat_lahir_ibu" value="{{old('tempat_lahir_ibu')}}"  class="form-control" placeholder="Tempat Lahir Ibu">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -77,20 +77,20 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="no_hp"  value="{{old('no_hp')}}"  class="form-control date" placeholder="no hp">
+                  <input type="text" name="No_hp"  value="{{old('No_hp')}}"  class="form-control date" placeholder="No Hp (+62)">
                 </div>
               </div>
             </div>
-            <h3>Perserta didik</h3>
+            <h3>Peserta Didik</h3>
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="nama_lengkap"  value="{{old('nama_lengkap')}}"  class="form-control" placeholder="Nama lengkap">
+                  <input type="text" name="nama_lengkap"  value="{{old('nama_lengkap')}}"  class="form-control" placeholder="Nama Lengkap">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="tempat_lahir"  value="{{old('tempat_lahir')}}" class="form-control" placeholder="Tempat lahir">
+                  <input type="text" name="tempat_lahir"  value="{{old('tempat_lahir')}}" class="form-control" placeholder="Tempat Lahir">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -105,12 +105,12 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="jenis_kelamin"  value="{{old('jenis_kelamin')}}" class="form-control" placeholder="jenis_kelamin">
+                  <input type="text" name="Jenis_kelamin"  value="{{old('Jenis_kelamin')}}" class="form-control" placeholder="Jenis kelamin">
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="form-group">
-                  <textarea class="form-control" name="alamat" placeholder="ALamat">{{old('alamat')}}</textarea>
+                  <textarea class="form-control" name="alamat" placeholder="Alamat">{{old('alamat')}}</textarea>
                 </div>
               </div>
               <div class="col-lg-12">
@@ -120,7 +120,7 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="already_account">Already have Account? <a href="{{url('login')}}">Login</a></div>
+              <div class="already_account">Already Have Account? <a href="{{url('login')}}">Login</a></div>
             </div>
           </form>
         </div>

@@ -5,14 +5,12 @@
   <div class="tp-banner">
     <ul>
       <li data-slotamount="7" data-transition="3dcurtain-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="images/dummy.png" data-lazyload="images/gambar1.png">
-        <div class="caption lft large-title tp-resizeme slidertext2" data-x="center" data-y="170" data-speed="600" data-start="1600"><span> Education Bright Future </span></div>
-        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="center" data-y="260" data-speed="600" data-start="2200"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nibh dolor, gravida faucibus dolor consectetur, <br/>
-          pulvinar rhoncus risus. Fusce vel rutrum mi. Suspendisse pretium tellus eu ipsum.</div>
+        
       </li>
       <li data-slotamount="7" data-transition="slotzoom-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="images/dummy.png" data-lazyload="images/gambar3.png">
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="center" data-y="170" data-speed="600" data-start="1600"><span> International School </span></div>
-        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="center" data-y="260" data-speed="600" data-start="2200"> Sekolah bernuansa alami dan berwawasan internasional<br/>
-          pulvinar rhoncus risus. Fusce vel rutrum mi. Suspendisse pretium tellus eu ipsum.</div>
+        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="center" data-y="260" data-speed="600" data-start="2200"> Sekolah Bernuansa Alami Dan Berwawasan Internasional<br/>
+          
       </li>
     </ul>
   </div>
@@ -57,7 +55,7 @@
               <div class="cours-icon"> <span class="coure-icon-inner"> <img src="images/scholarship.png" alt=""> </span> </div>
               <div class="cours-title">
                 <h4>Moto</h4>
-                <p>Sekolah bernuansa alami dan berwawasan internasional</p>
+                <p>Sekolah Bernuansa Alami Dan Berwawasan Internasional</p>
               </div>
             </div>
           </div>
@@ -82,11 +80,11 @@
           <div class="title">
             <h1>Visi dan Misi</h1>
           </div>
-          <p><strong>Visi </strong><br>Mempersiapkan generasi yang cerdas dan berakhlak mulia
+          <p><strong>Visi </strong><br>Mempersiapkan Generasi Yang Cerdas Dan Berakhlak Mulia
             <strong>Misi </strong><br>
             <ul style="margin-left:30px">
-                <li>Mencerdaskan anak dengan dasar iman dan takwa</li>
-                <li>Mengembangkan potensi dasar yang telah dimiliki anak</li>
+                <li>Mencerdaskan Anak Dengan Dasar Iman Dan Takwa</li>
+                <li>Mengembangkan Potensi Dasar Yang Telah Dimiliki Anak</li>
             </ul>
           </p>
           <ul class="edu_list">
@@ -95,7 +93,7 @@
                 <div class="edu_icon"><img src="images/education.png" alt=""></div>
                 <div class="learn_info">
                   <h3>Kurikulum</h3>
-                  <p>Kurikulum yang digunakan merupakan perpaduan antara Kurikulum nasional dan nilai-nilai agama islam</p>
+                  <p>Kurikulum Yang Digunakan Merupakan Perpaduan Antara Kurikulum Nasional Dan Nilai-Nilai Agama Islam Pada Setiap Materi Pembelajaran.</p>
                 </div>
               </div>
             </li>
@@ -104,7 +102,7 @@
                 <div class="edu_icon"><img src="images/class.png" alt=""></div>
                 <div class="learn_info">
                   <h3>Tenaga Pengajar</h3>
-                  <p>Kurikulum yang digunakan merupakan perpaduan antara Kurikulum nasional dan nilai-nilai agama islam</p>
+                  <p>Pendidikan Dan Pengajaran Dilaksanakan Sesuai Dengan Prinsip-Prinsip Pendidikan Anak Usia Dini</p>
                 </div>
               </div>
             </li>
@@ -113,7 +111,7 @@
                 <div class="edu_icon"><img src="images/academy.png" alt=""></div>
                 <div class="learn_info">
                   <h3>Fasilitas</h3>
-                  <p>Lorem ipsum dolor sit amet, adipiscing elit. Vivamus nibh dolor gravida at eleifend</p>
+                  <p>Ruang Kelas Luas, Bersih Dan Sehat</p>
                 </div>
               </div>
             </li>

@@ -16,11 +16,11 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="class_left ">
-            <h3>Persyaratan</h3>
+            <h3>Persyaratan Pendaftaran</h3>
             <div class="sidebar-item">
               <ul class="class-details">
                 <li>
-                  <div class="name"><i class="fas fa-pencil-alt"></i>Pendaftar adalah orang tua / Walinya & calon siswa dibawa serta pada saat mendaftar</div>
+                  <div class="name"><i class="fas fa-pencil-alt"></i>Pendaftar adalah orang tua / walinya & calon siswa dibawa serta pada saat mendaftar</div>
                 </li>
                 <li>
                   <div class="name"><i class="fas fa-user" aria-hidden="true"></i>Mentaati peraturan yang telah ditentukan</div>
@@ -32,7 +32,7 @@
                   <div class="name"><i class="fas fa-bus" aria-hidden="true"></i>Menyerahkan pas photo terbaru berwarna 3x4 sebanyak 4 lembar</div>
                 </li>
                 <li>
-                  <div class="name"><i class="fas fa-calendar" aria-hidden="true"></i>Usia calon siswa pada juli minimal</div>
+                  <div class="name"><i class="fas fa-calendar" aria-hidden="true"></i>Usia calon siswa pada Juli minimal</div>
                 </li>
                 <li>
                   <div class="name"><i class="fas fa-calendar" aria-hidden="true"></i>TK A : 3.10 Tahun</div>
@@ -41,7 +41,7 @@
                   <div class="name"><i class="fas fa-calendar" aria-hidden="true"></i>TK B : 4.10 Tahun</div>
                 </li>
                 <li>
-                  <div class="name"><i class="fas fa-money" aria-hidden="true"></i>Membayar uang pendaftaran dan angsuran ppdb</div>
+                  <div class="name"><i class="fas fa-money" aria-hidden="true"></i>Membayar uang pendaftaran dan PPDB</div>
                 </li>
               </ul>
             </div>
