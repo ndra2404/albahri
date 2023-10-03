@@ -71,7 +71,7 @@
             <p>Bogor, {{date('d F Y')}}</p>
             <br>
             <p>
-            Admin
+            Siti Rizky
             </p>
         </div>
 </div>
