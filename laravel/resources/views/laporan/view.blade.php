@@ -27,6 +27,20 @@
 </head>
 <body>
 <table class="table">
+    <tr>
+        <td>
+            <div style='text-align:center'>
+                <div style='font-size:12px'>YAYASAN AL-BAHRI CIBINONG</div>
+                <div style='font-size:18px;font-weight:bold'>TK AL-BAHRI</div>
+                <span style='font-size:8px'>JL. Mayor Oking Jayaatmaja Ciriung RT.05/01 No. 16, Kodepos 16918 Cibinong Kabupaten Bogor<br> Telp. (021) 87907094<span>
+            <div>
+        </td>
+    </tr>
+</table>
+<hr>
+<div style="padding: 10px;">
+<table class="table table-bordered">
+    <thead>
             <tr>
                 <th>No</th>
                 <th>Nomor Pendaftaran</th>
@@ -37,6 +51,7 @@
                 <th>Jenis Kelamin</th>
                 <th>Kelas</th>
             </tr>
+</thead>
             @foreach($pesertas as $peserta)
             <tr>
                 <td>{{$loop->index+1}}</td>
@@ -50,3 +65,13 @@
             </tr>
             @endforeach
         </table>
+
+
+        <div style="bottom:0;position:absolute;right: 20px;height:150px">
+            <p>Bogor, {{date('d F Y')}}</p>
+            <br>
+            <p>
+            Siti Rizky
+            </p>
+        </div>
+</div>

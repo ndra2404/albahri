@@ -67,7 +67,8 @@
                                     <a href="{{route('jadwalInterview',$peserta->id_pendaftaran)}}" class="btn btn-primary">Jadwal Interview</a>
                                 @endif
                                 @if($peserta->status==5)
-                                    <a target="_blank" href="{{route('invoice',$peserta->id_pendaftaran)}}" class="btn btn-primary">Kirim Invoice</a>
+                                    <a target="_blank" href="{{route('invoice',$peserta->id_pendaftaran)}}" class="btn btn-primary btn-sm">Kirim Invoice</a>
+                                    <a target="_blank" href="{{route('ditolak',$peserta->id_pendaftaran)}}" class="btn btn-danger btn-sm">Ditolak</a>
                                 @endif
                                 @if($peserta->status==7)
                                     <a href="{{route('pembayaran',$peserta->id_pendaftaran)}}" class="btn btn-primary">Cek pembayaran</a>

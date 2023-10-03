@@ -174,11 +174,26 @@ class PendaftaranController extends Controller
     public function invoice(REQUEST $reg,$id){
         $data = PendaftaranModel::leftJoin('tbl_orangtua as b','b.id_orangtua','=','tbl_pendaftaran.id_orangtua')
         ->where('id_pendaftaran',$id)->firstOrFail();
+        PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'99']);
+        $bayar = MasterParamModel::where('param_code','BAYAR')->first();
+        $norek = MasterParamModel::where('param_code','NOREK')->first();
+        $notifWa = DB::table('tbl_notif')->where('code','DTOL')->first();
+        $notifWa = $notifWa->content;
+        $change = array('[nodaftar]','[norek]','[nominal]');
+        $new = array($data->no_pendaftaran,$norek->param_value,number_format($bayar->param_value));
+        return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
+    }
+    public function tolak(REQUEST $reg,$id){
+        $data = PendaftaranModel::leftJoin('tbl_orangtua as b','b.id_orangtua','=','tbl_pendaftaran.id_orangtua')
+        ->where('id_pendaftaran',$id)->firstOrFail();
         PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'6']);
         $bayar = MasterParamModel::where('param_code','BAYAR')->first();
-        $message ="Kepada Ibu/Bapak,\n\nKami dari sekolah islam terpadu memberitahukan hasil wawancara dan test pendaftaran anda dengan nomor ".$data->no_pendaftaran." dinyatakan lulus sebagai calon siswa baru dan diharapkan untuk segera melakukan pembayaran
-        administrasi sekolah dengan nominal Rp. ".number_format($bayar->param_value);
-        return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
+        $notifWa = DB::table('tbl_notif')->where('code','DTOL')->first();
+        $notifWa = $notifWa->content;
+        $change = array('[nodaftar]');
+        $new = array($data->no_pendaftaran);
+        $notifWa = str_replace($change,$new,$notifWa);
+        return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($notifWa));
     }
     public function uploadDocument(Request $reg,$id){
         $destinationPath = 'upload/document';
@@ -289,7 +304,9 @@ class PendaftaranController extends Controller
     public function cetakPdf() {
         // retreive all records from db
         $data = PendaftaranModel::all();
+        $pesertas = $data;
         $pdf = PDF::loadView('laporan.view', ['pesertas'=>$data]);
+        //return view('laporan.view',compact('pesertas'));
         return $pdf->stream('laporan.pdf');
       }
     function invoiceNumber()
