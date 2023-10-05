@@ -60,7 +60,7 @@ class PendaftaranController extends Controller
             $orangtua->tempat_lahir_ibu=$request->input('tempat_lahir_ibu');
             $orangtua->tgl_lahir_ibu=date('Ymd',strtotime($request->input('tgl_lahir_ibu')));
             $orangtua->pekerjaan_ibu=$request->input('pekerjaan_ibu');
-            $orangtua->no_telp=$request->input('no_hp');
+            $orangtua->no_telp=$request->input('No_hp');
             $orangtua->email=$request->input('email');
             $orangtua->id_users = $user->id;
             $orangtua->save();
@@ -181,6 +181,7 @@ class PendaftaranController extends Controller
         $notifWa = $notifWa->content;
         $change = array('[nodaftar]','[norek]','[nominal]');
         $new = array($data->no_pendaftaran,$norek->param_value,number_format($bayar->param_value));
+        $message = str_replace($change,$new,$notifWa);
         return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
     }
     public function tolak(REQUEST $reg,$id){

@@ -77,7 +77,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="No_hp"  value="{{old('No_hp')}}"  class="form-control date" placeholder="No Hp (+62)">
+                  <input type="text" name="No_hp" autocomplete="false" required  value="{{old('No_hp')}}"  class="form-control date" placeholder="No Hp (+62)">
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input type="text" name="Jenis_kelamin"  value="{{old('Jenis_kelamin')}}" class="form-control" placeholder="Jenis kelamin">
+                  <input type="text" name="jenis_kelamin"  value="{{old('Jenis_kelamin')}}" class="form-control" placeholder="Jenis kelamin">
                 </div>
               </div>
               <div class="col-lg-12">
