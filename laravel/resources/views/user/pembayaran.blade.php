@@ -17,7 +17,7 @@
     <!-- Register Start -->
     <div class="container">
     <div class="col-md-12">
-        <form method="post" action="" enctype="multipart/form-data">
+        <form method="post" target="_blank" action="" enctype="multipart/form-data">
         <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">

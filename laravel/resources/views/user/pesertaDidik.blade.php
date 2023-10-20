@@ -57,8 +57,12 @@
                                 @elseif($peserta->status==4)
                                 @elseif($peserta->status==5)
                                     Kirim Invoice
-                                @elseif($peserta->status==5)
+                                @elseif($peserta->status==6)
                                     Cek pembayaran
+                                @elseif($peserta->status==99)
+                                    Ditolak
+                                @elseif($peserta->status==8)
+                                    Diterima
                                 @else
                                     -
                                 @endif
@@ -72,6 +76,12 @@
                                 @endif
                                 @if($peserta->status==7)
                                     <a href="{{route('pembayaran',$peserta->id_pendaftaran)}}" class="btn btn-primary">Cek pembayaran</a>
+                                @endif
+                                @if($peserta->status==99)
+                                    Ditolak
+                                @endif
+                                @if($peserta->status==8)
+                                    Diterima
                                 @endif
                                 @if($peserta->status==1)
                                     Menunggu upload Persyaratan
