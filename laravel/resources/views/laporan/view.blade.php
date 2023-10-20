@@ -63,7 +63,7 @@
                 <td>{{$peserta->agama}}</td>
                 <td>{{$peserta->jenis_kelamin}}</td>
                 <td>{{$peserta->kelas}}</td>
-                <td>{{$peserta->status=="99"?'Ditolak':$peserta->status=="8"?'Diterima':'-'}}</td>
+                <td>{{$peserta->status=="99"?'Ditolak':($peserta->status=="8"?'Diterima':'-')}}</td>
             </tr>
             @endforeach
         </table>
