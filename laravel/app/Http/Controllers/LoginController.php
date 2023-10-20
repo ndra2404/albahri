@@ -13,7 +13,6 @@ class LoginController extends Controller
             'username' => $req->input('email'),
             'password' => $req->input('password'),
         ];
-
         if (Auth::Attempt($data)) {
             return redirect('/');
         }else{

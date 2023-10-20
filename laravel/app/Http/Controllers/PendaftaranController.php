@@ -135,7 +135,11 @@ class PendaftaranController extends Controller
         if($reg->isMethod('post')){
             $dataUpdate = PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'8']);
             $tgl = MasterParamModel::where('param_code','MULAI')->first();
-            echo $message ="Dear Ibu/Bapak,\n\nPembayaran anda dengan nomor Pendaftaran ".$data->no_pendaftaran." telah kami terima, Pembelajaran dimulai pada ".date('d M Y',strtotime($tgl->param_value));
+            $notifWa = DB::table('tbl_notif')->where('code','MULAI')->first();
+            $notifWa = $notifWa->content;
+            $change = array('[nodaftar]','[tgl]');
+            $new = array($data->no_pendaftaran,date('d M Y',strtotime($tgl->param_value)));
+            $message = str_replace($change,$new,$notifWa);
             return redirect()->away('https://wa.me/'.$data->no_telp.'?text='.urlencode($message));
         }
 
@@ -174,10 +178,10 @@ class PendaftaranController extends Controller
     public function invoice(REQUEST $reg,$id){
         $data = PendaftaranModel::leftJoin('tbl_orangtua as b','b.id_orangtua','=','tbl_pendaftaran.id_orangtua')
         ->where('id_pendaftaran',$id)->firstOrFail();
-        PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'99']);
+        PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'6']);
         $bayar = MasterParamModel::where('param_code','BAYAR')->first();
         $norek = MasterParamModel::where('param_code','NOREK')->first();
-        $notifWa = DB::table('tbl_notif')->where('code','DTOL')->first();
+        $notifWa = DB::table('tbl_notif')->where('code','BAYAR')->first();
         $notifWa = $notifWa->content;
         $change = array('[nodaftar]','[norek]','[nominal]');
         $new = array($data->no_pendaftaran,$norek->param_value,number_format($bayar->param_value));
@@ -187,7 +191,7 @@ class PendaftaranController extends Controller
     public function tolak(REQUEST $reg,$id){
         $data = PendaftaranModel::leftJoin('tbl_orangtua as b','b.id_orangtua','=','tbl_pendaftaran.id_orangtua')
         ->where('id_pendaftaran',$id)->firstOrFail();
-        PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'6']);
+        PendaftaranModel::where('id_pendaftaran',$id)->update(['status'=>'99']);
         $bayar = MasterParamModel::where('param_code','BAYAR')->first();
         $notifWa = DB::table('tbl_notif')->where('code','DTOL')->first();
         $notifWa = $notifWa->content;
