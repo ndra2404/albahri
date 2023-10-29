@@ -162,7 +162,7 @@
                     <tr>
                         <td>5</td>
                         <td>Sumbangan Bangunan</td>
-                        <td>Rp. {{number_format(41000)}}</td>
+                        <td>Rp. {{number_format(410000)}}</td>
                     </tr>
                     <tfooter>
                     <tr style="font-weight: bold;">

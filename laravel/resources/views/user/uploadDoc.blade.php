@@ -37,7 +37,7 @@
             </div>
             <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-left">Submit</button>
-                <a href="{{url('data/persertaDidik')}}" class="btn btn-warning pull-right">Cancel</a>
+                <a href="{{url('data/pesertadidik')}}" class="btn btn-warning pull-right">Cancel</a>
             </div>
         </form>
     </div>
