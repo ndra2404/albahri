@@ -20,20 +20,20 @@
         <form method="post" action="" enctype="multipart/form-data">
 
             <div class="form-group">
-                <label>Akte Kelahiran</label>
-                <input type="file" required name="akte_kelahiran" class="form-control-file border">
+                <label>Akte Kelahiran (max 2MB)</label>
+                <input type="file" id="image-input" required name="akte_kelahiran" class="form-control-file border">
             </div>
             <div class="form-group">
-                <label>Kartu Keluarga</label>
-                <input type="file" required name="kartu_keluarga" class="form-control-file border">
+                <label>Kartu Keluarga(max 2MB)</label>
+                <input type="file" id="kk" required name="kartu_keluarga" class="form-control-file border">
             </div>
             <div class="form-group">
-                <label>Ktp Wali</label>
-                <input type="file" required name="ktp_wali" class="form-control-file border">
+                <label>Ktp Wali(max 2MB)</label>
+                <input type="file" id="ktp" required name="ktp_wali" class="form-control-file border">
             </div>
             <div class="form-group">
-                <label>Pas Photo</label>
-                <input type="file" required name="pas_photo" class="form-control-file border">
+                <label>Pas Photo(max 2MB)</label>
+                <input type="file" id="pp" required name="pas_photo" class="form-control-file border">
             </div>
             <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-left">Submit</button>

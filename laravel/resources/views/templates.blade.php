@@ -111,7 +111,36 @@
 <!-- general script file -->
 <script src="{{url('')}}/js/owl.carousel.js"></script>
 <script src="{{url('')}}/js/script.js"></script>
+<script>
+    $('#image-input').on('change', function() {
+    let size = this.files[0].size; // this is in bytes
+    if (size > 220224) {
+        alert('Akte Kelahiran tidak boleh lebih dari 2mb')
+        // do something. Prevent form submit. Show message, etc.
+    }
+});
+$('#kk').on('change', function() {
+    let size = this.files[0].size; // this is in bytes
+    if (size > 220224) {
+        alert('Kartu Keluarga tidak boleh lebih dari 2mb')
+        // do something. Prevent form submit. Show message, etc.
+    }
+});
+$('#ktp').on('change', function() {
+    let size = this.files[0].size; // this is in bytes
+    if (size > 220224) {
+        alert('ktp tidak boleh lebih dari 2mb')
+        // do something. Prevent form submit. Show message, etc.
+    }
+});
+$('#pp').on('change', function() {
+    let size = this.files[0].size; // this is in bytes
+    if (size > 220224) {
+        alert('Pas photo tidak boleh lebih dari 2mb')
+        // do something. Prevent form submit. Show message, etc.
+    }
+});
+    </script>
 </body>
-
 <!-- Mirrored from entiretimes.com/html/school/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Jun 2023 03:52:27 GMT -->
 </html>
