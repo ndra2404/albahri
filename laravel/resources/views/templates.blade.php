@@ -116,6 +116,7 @@
     let size = this.files[0].size; // this is in bytes
     if (size > 220224) {
         alert('Akte Kelahiran tidak boleh lebih dari 2mb')
+        this.value="";
         // do something. Prevent form submit. Show message, etc.
     }
 });
@@ -123,6 +124,7 @@ $('#kk').on('change', function() {
     let size = this.files[0].size; // this is in bytes
     if (size > 220224) {
         alert('Kartu Keluarga tidak boleh lebih dari 2mb')
+        this.value="";
         // do something. Prevent form submit. Show message, etc.
     }
 });
@@ -130,6 +132,7 @@ $('#ktp').on('change', function() {
     let size = this.files[0].size; // this is in bytes
     if (size > 220224) {
         alert('ktp tidak boleh lebih dari 2mb')
+        this.value="";
         // do something. Prevent form submit. Show message, etc.
     }
 });
@@ -137,6 +140,7 @@ $('#pp').on('change', function() {
     let size = this.files[0].size; // this is in bytes
     if (size > 220224) {
         alert('Pas photo tidak boleh lebih dari 2mb')
+        this.value="";
         // do something. Prevent form submit. Show message, etc.
     }
 });
